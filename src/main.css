@@ -1,12 +1,73 @@
-body {
-  font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif;
-  margin: 0;
-  text-align: center;
-  color: #293c4b;
+@font-face {
+  font-family: "Metropolis";
+  src: url("../public/fonts/metropolis/Metropolis-Black.otf") format("otf"),
+  url("../public/fonts/metropolis/Metropolis-Bold.otf") format("otf"),
+  url("../public/fonts/metropolis/Metropolis-Light.otf") format("otf"),
+  url("../public/fonts/metropolis/Metropolis-Regular.otf") format("otf");
 }
 
-h1 {
-  font-size: 30px;
+body {
+  font-family: 'Metropolis', 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif;
+  color: #444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-right: -15px;
+  margin-bottom: 2em;
+}
+
+.header h1 {
+  font-size: 60px;
+  font-weight: 300;
+  letter-spacing: .2em;
+  text-align: right;
+  line-height: 1.30em;
+}
+
+.links li > a {
+  margin-left: 1em;
+}
+
+.links li {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.links p {
+  margin: 0;
+}
+
+section.links,
+section.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.about {
+  margin-bottom: 2em;
+  text-align: right;
+}
+
+.links ul {
+  vertical-align: center;
+  margin-bottom: 2em;
+  margin-top: 0;
+  list-style-type: none;
+  line-height: 2em;
+  text-align: right;
 }
 
 img {
