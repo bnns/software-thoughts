@@ -20,5 +20,8 @@
   "homepage": "https://github.com/bnns/software-thoughts#readme",
   "devDependencies": {
     "cssnano": "^4.1.10"
+  },
+  "dependencies": {
+    "d3": "^5.9.2"
   }
 }

@@ -15,11 +15,26 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+h3 {
+  border-bottom: 2px solid #c24912;
+  padding-bottom: 5px;
+}
+
+#canvas {
+  max-width: 768px;
+  display: inline-block;
+}
+
+.book {
+  display: flex;
+  margin: 10em auto;
+  justify-content: center;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   max-width: 768px;
-  margin: 10em auto;
 }
 
 #header {
@@ -86,6 +101,11 @@ img {
     blink-caret .75s step-end infinite;
 }
 
+.name {
+  color: #c24912;
+  font-weight: 700;
+}
+
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
@@ -93,6 +113,9 @@ img {
 }
 
 @media (max-width: 1024px) {
+  #canvas {
+    display: none;
+  }
 
   #header {
     /* center */
